@@ -11,7 +11,7 @@ describe('Commands example', () => {
         cy.url().should('eq', 'https://www.saucedemo.com/v1/index.html')
     });
 
-    it('Failde login test', () => {
+    it('Failed login test', () => {
         cy.TypeLogin('standard_user', 'dummy')
         cy.get("[data-test='error']").should('contain.text','Epic sadface: Username and password do not match any user in this service');
     });
